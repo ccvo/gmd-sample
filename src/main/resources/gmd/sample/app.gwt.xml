@@ -6,6 +6,11 @@
   <!-- Specify the app entry point class.                         -->
   <entry-point class='gmd.sample.client.App' />
 
+  <!-- GWT Material Design				                         -->
+  <inherits name="gwt.material.design.GwtMaterialDesignBasic" />
+  <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
+  <inherits name="gwt.material.design.themes.ThemeOrange"/>
+
   <!-- Specify the paths for translatable code                    -->
   <source path='client' />
 </module>
