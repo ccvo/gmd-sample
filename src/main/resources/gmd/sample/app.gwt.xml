@@ -3,13 +3,20 @@
   <!-- Inherit the core Web Toolkit stuff.                        -->
   <inherits name='com.google.gwt.user.User' />
 
+  <!-- to support localization and internationalization.          -->
+  <inherits name="com.google.gwt.i18n.I18N"/>
+
+  <!-- GWT Material Design				                         -->
+  <inherits name="gwt.material.design.GwtMaterialBasicWithJQuery" />
+  <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
+  <inherits name="gwt.material.design.themes.ThemeOrange"/>
+
   <!-- Specify the app entry point class.                         -->
   <entry-point class='gmd.sample.client.App' />
 
-  <!-- GWT Material Design				                         -->
-  <inherits name="gwt.material.design.GwtMaterialDesignBasic" />
-  <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
-  <inherits name="gwt.material.design.themes.ThemeOrange"/>
+  <!-- Specify default locale for the app.                        -->
+  <extend-property name="locale" values="vi"/>
+  <set-property name="locale" value="vi" />
 
   <!-- Specify the paths for translatable code                    -->
   <source path='client' />
