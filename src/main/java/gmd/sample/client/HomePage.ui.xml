@@ -11,25 +11,25 @@
 	<g:HTMLPanel addStyleNames="{style.root}">
 		<m:MaterialTitle title="MaterialTitle: Hello!" />
 
-		<m:MaterialLabel marginBottom="10" textColor="RED">
-			The next field is a MaterialButton, there is an exception in the console saying: Cannot read property 'displayEffect' of undefined.
+		<m:MaterialLabel marginBottom="10">
+			The next field is a MaterialButton.
 		</m:MaterialLabel>
 		<m:MaterialButton text="MaterialButton using Orange theme" waves="LIGHT" />
 
-		<m:MaterialLabel marginTop="30" marginBottom="10" textColor="RED">
-			The next field is a MaterialTextBox. Its 'label' overlaps the field value.
+		<m:MaterialLabel marginTop="30" marginBottom="10">
+			The next field is a MaterialTextBox.
 		</m:MaterialLabel>
 		<m:MaterialTextBox label="label: This is MaterialTextBox" />
 
-		<m:MaterialLabel marginTop="30" marginBottom="10" textColor="RED">
-			The next field is an MaterialAutoComplete from Addins. It shows nothing on the screen. By inspecting the element, we can only see just empty divs.
+		<m:MaterialLabel marginTop="30" marginBottom="10">
+			The next field is an MaterialAutoComplete from Addins.
 		</m:MaterialLabel>
 		<ma:MaterialAutoComplete ui:field="autoCompleteField" placeholder="Addins MaterialAutoComplete" />
 
 		<m:MaterialLabel marginTop="30" marginBottom="10" textColor="RED">
-			The next field is MaterialDatePicker. It does not look and feel the same as the GWT Material Demo. 
+			The next field is MaterialDatePicker. The bottom-border gets green-highlighted automatically but unexpectedly.
 		</m:MaterialLabel>
-		<m:MaterialDatePicker placeholder="This is MaterialDatePicker" />
+		<m:MaterialDatePicker ui:field="dateField" />
 
 		<m:MaterialLabel marginTop="30" marginBottom="10" textColor="RED">
 			The next field is MaterialTextArea. The label does not get theme-highlighted on focus. 
